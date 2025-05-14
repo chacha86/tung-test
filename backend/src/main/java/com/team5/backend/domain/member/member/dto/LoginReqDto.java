@@ -20,4 +20,9 @@ public class LoginReqDto {
     private String password;
 
     private boolean rememberMe = false;
+
+    public LoginReqDto(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
 }

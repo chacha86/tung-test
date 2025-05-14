@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
+
 public class RsData<T> {
 
     private boolean success;
@@ -18,4 +19,8 @@ public class RsData<T> {
     private String msg;     // errorCode.getCode()
     private String message; // errorCode.getMessage() 또는 상세 메시지
     private T data;
+
+    public String getCode() {
+        return msg;
+    }
 }
