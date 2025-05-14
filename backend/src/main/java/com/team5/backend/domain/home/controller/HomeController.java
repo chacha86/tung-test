@@ -31,7 +31,7 @@ public class HomeController {
         }
 
         // 무중단 배포 시 환경 변화 확인
-        return "API 서버에 오신 걸 환영합니다. Host: " + hostName;
+        return "고쳐진 API 서버에 오신 걸 환영합니다. Host: " + hostName;
     }
 
     @GetMapping("/session")
